@@ -1,6 +1,6 @@
 name: workflow-dispatch-minion
 on:
-  repository_dispatch:
+  workflow_dispatch:
     inputs:
       name:
         description: 'Person to greet'
