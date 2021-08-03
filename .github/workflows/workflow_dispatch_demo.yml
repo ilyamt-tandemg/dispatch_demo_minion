@@ -1,4 +1,4 @@
-name: Manually triggered workflow
+name: Triggered by repository dispatch
 on:
   repository_dispatch:
     inputs:
