@@ -1,4 +1,4 @@
-name: Triggered by repository dispatch
+name: workflow-dispatch-minion
 on:
   repository_dispatch:
     inputs:
