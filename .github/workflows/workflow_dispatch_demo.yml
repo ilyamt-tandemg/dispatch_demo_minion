@@ -15,6 +15,9 @@ jobs:
   say_hello:
     runs-on: ubuntu-latest
     steps:
+      - name: print-things
       - run: |
           echo "Hello ${{ github.event.inputs.name }}!"
           echo "- in ${{ github.event.inputs.home }}!"
+      - name: fail-job
+        run: exit 1
