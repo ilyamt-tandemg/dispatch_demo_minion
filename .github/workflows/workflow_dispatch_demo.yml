@@ -21,4 +21,4 @@ jobs:
         echo "Hello ${{ github.event.inputs.name }}!"
         echo "- in ${{ github.event.inputs.home }}!"
     - name: create-file
-      run: '"I am the output!" > output.txt'
+      run: 'echo "I am the output!" > output.txt'
