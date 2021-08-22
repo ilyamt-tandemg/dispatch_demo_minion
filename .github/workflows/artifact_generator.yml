@@ -1,0 +1,16 @@
+name: generate-important-artifacts
+on:
+  workflow_dispatch
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2    
+    - name: create-important-artifacts
+      run: 'echo $(date) > output.txt'
+    - name: upload-important-artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: important-artifacts
+        path: output.txt
