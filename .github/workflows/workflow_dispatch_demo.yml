@@ -22,3 +22,10 @@ jobs:
         echo "- in ${{ github.event.inputs.home }}!"
     - name: create-file
       run: 'echo "I am the output!" > output.txt'
+    - name: uploader-important-artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: important-artifacts
+        path: output.txt
+
+  
