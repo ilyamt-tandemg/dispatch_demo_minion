@@ -6,11 +6,11 @@ on:
       - main
 
 jobs:
-  call-workflow:
-    uses: octo-org/example-repo/.github/workflows/workflow-A.yml@v1
+#   call-workflow:
+#     uses: ilyamt-tandemg/dispatch_demo_minion/.github/workflows/workflow-A.yml@v1
 
   call-workflow-passing-data:
-    uses: octo-org/example-repo/.github/workflows/workflow-B.yml@main
+    uses: ilyamt-tandemg/dispatch_demo_minion/.github/workflows/workflow-B.yml@main
     with:
       username: mona
     secrets:
